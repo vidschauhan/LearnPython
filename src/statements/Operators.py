@@ -35,7 +35,7 @@ list1 = [1, 2, 3]
 list2 = ['a', 'b', 'c']
 list3 = [12, 34, 5, 3, 12]
 
-for it in zip(list1, list2):
+for it in zip(list1, list2, list3):
     print(it)  # Zips two lists and returns tuples. If the size of the list is uneven then,
     # it picks the smallest list to zip and ignores rest of other list elements.
 
