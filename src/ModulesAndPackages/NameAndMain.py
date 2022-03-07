@@ -1,6 +1,6 @@
 # Created by vidit.singh at 04-03-2022
 
-# __name__ is a built-in variable which is assigned to __main__ if he files is run/called itself, if he file is
+# __name__ is a built-in variable which is assigned to __main__ if he files is run/called itself, if the file is
 # imported to other python script then __name__ value becomes name of the class not __main__.
 
 def add(n1, n2):
