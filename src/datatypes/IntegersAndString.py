@@ -31,7 +31,8 @@ print(s1[-1])  # takes index from last position.
 print(s1[:2])  # prints Everything before first 2 character.
 print(s1[2:])  # prints Everything after first 2 character.
 print(s1[3:6])  # takes after 3rd index up to 6th index of string.
-print(s1[3:6:7])  # takes after 3rd index up to 6th index of string.
+s2 = "qwertyuiop"
+print("Step " + s2[2:8:2])  # takes after 2nd index up to 8th(doesn't include) with step of 2.
 print(s1[:: -1])  # reversing string
 
 print(s1.upper())  # to upper case

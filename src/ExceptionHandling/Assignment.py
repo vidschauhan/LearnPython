@@ -2,7 +2,6 @@
 
 
 def square_it():
-
     while True:
         try:
             num = int(input(" Enter a number :"))
@@ -12,7 +11,6 @@ def square_it():
             continue
         else:
             return result
-
 
 
 print(square_it())

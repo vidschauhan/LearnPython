@@ -18,6 +18,9 @@ class Animal:
 
 class Dog(Animal):
 
+    def __init__(self):
+        super().__init__()  # Calling Immediate Parent Class constructor.
+
     def who_am_i(self):
         print('I am dog')
 
@@ -31,5 +34,5 @@ class Dog(Animal):
         print(f'My breed is {breed}')
 
 
-dog = Dog
-print(dog.get_breed(dog,breed='Lab'))
+dog = Dog()
+print(dog.get_breed(breed='Lab'))

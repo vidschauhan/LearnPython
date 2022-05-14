@@ -8,3 +8,8 @@ elif name == 'Vidit':
     print("True")
 else:
     print("Not found!")
+
+# Ternary operator
+
+n = "Cool" if 5 > 6 else "Hello World"
+print(n)
