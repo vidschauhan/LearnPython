@@ -16,8 +16,8 @@ def main():
 from collections import defaultdict
 
 d = {'key1': "Vidit"}
-
 print(f"Dictionary : {d['key1']}")
+print(d.get('ke2','key not present'))
 
 d = defaultdict(lambda: "default value")
 

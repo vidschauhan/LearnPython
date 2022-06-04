@@ -13,5 +13,5 @@ def print_data(array1):
 
 print_data(int_type_array)
 
-int_type_array.insert(1,444) # Insert at first position of the array.
+int_type_array.insert(1, 444)  # Insert at first position of the array.
 print_data(int_type_array)

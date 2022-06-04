@@ -13,3 +13,6 @@ print(my_set)
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 l_set = set(my_list)
 print(l_set)  # Sets output are in enclosed in {}.
+
+set_1 = {1, 2, 3, 3, 4, 5}
+print(set_1)
