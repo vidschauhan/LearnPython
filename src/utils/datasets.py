@@ -10,12 +10,21 @@ def get(filename):
         return fileobject.read().splitlines()
 
 
+def open_file(filename, modes):
+    with open(filename, modes) as fileobject:
+        return fileobject.read().splitlines()
+
+
 def get_file_path(filename):
     return f'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\retail_db\\{filename}\\part-00000 '
 
 
 def output_dir():
-    return 'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\retail_db\\output'
+    return 'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\outputs'
+
+
+def base_dir():
+    return 'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\'
 
 
 def get_dataframe(filename, pd):
