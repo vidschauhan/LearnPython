@@ -16,3 +16,7 @@ class Posgress:
         except Exception as e:
             raise e
         return connection
+
+    @staticmethod
+    def get_sql_alchemy_connection(username, password, host, port, database):
+        return f'postgresql://{username}:{password}@{host}:{port}/{database}'

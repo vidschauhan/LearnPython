@@ -4,6 +4,9 @@
 # print(orders_file.read())
 
 # This is better approach as this will not load whole file in memory. WIth huge files it becomes memory problems.
+import os
+
+
 def get(filename):
     file = get_file_path(filename)
     with open(file, 'r') as fileobject:
@@ -25,6 +28,12 @@ def output_dir():
 
 def base_dir():
     return 'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\'
+
+
+def get_json_path(dir_name):
+    base_dirs = 'D:\\Data Engineering\\Projects\\Internal\\bootcamp\\data-engineering-spark\\data\\retail_db_json\\'
+    json_file = os.listdir(f'{base_dirs}{dir_name}')[0]  # assuming there is only 1 file in directory
+    return f'{base_dirs}{dir_name}\\{json_file}'
 
 
 def get_dataframe(filename, pd):
